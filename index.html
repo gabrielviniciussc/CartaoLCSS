@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Visitas Digital - Gabriel Vinícius</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cartao {
+            width: 90%;
+            max-width: 600px;
+            background-color: #ffffff;
+            border: 3px solid #008000;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            padding: 20px;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .cartao-esquerda {
+            background-color: #008000; 
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+            text-align: center;
+            width: calc(100% + 40px);
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: -20px;
+            box-sizing: border-box;
+        }
+
+        .cartao-esquerda .foto-perfil {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #ffffff;
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cartao-esquerda h1 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .cartao-esquerda p {
+            font-size: 1.2rem; /* Aumentado o tamanho do texto "Engenheiro de Software" */
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin: 30px 0; /* Adicionado mais espaço acima do título "Informações de Contato" */
+            color: #008000; 
+            position: relative;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .info-contato {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .info-item {
+            text-align: center;
+            width: 48%;
+            box-sizing: border-box;
+        }
+
+        .info-item img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .info-item p {
+            margin: 5px 0 0 0;
+            font-size: 1rem;
+            word-wrap: break-word;
+        }
+
+        .info-social {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-item {
+            width: 30%;
+            margin: 10px 1%;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .social-item img {
+            width: 60px;
+            height: 60px;
+        }
+
+        footer {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin-top: 20px;
+        }
+
+        footer .info {
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .info-contato,
+        .info-social {
+            border-top: 3px solid #FF0000;
+            padding-top: 20px; /* Ajustado para uniformidade entre as seções */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cartao">
+        <div class="cartao-esquerda">
+            <img src="images/gabriel.jpg" alt="Foto de Perfil" class="foto-perfil">
+            <h1>Gabriel Vinícius da Silva Correia</h1>
+            <p>Engenheiro de Software</p>
+        </div>
+        <div>
+            <h2>Informações de Contato</h2>
+            <div class="info-contato">
+                <div class="info-item">
+                    <img src="images/telefone.jpg" alt="Ícone de Telefone">
+                    <p><strong>Telefone:</strong></p>
+                    <p>(85) 98817-1797</p>
+                </div>
+                <div class="info-item">
+                    <img src="images/email.png" alt="Ícone de E-mail">
+                    <p><strong>E-mail:</strong></p>
+                    <p style="word-break: break-word;">gabriel.vinicius@aluno.ifce.edu.br</p>
+                </div>
+            </div>
+            <h2>Redes Sociais</h2>
+            <div class="info-social">
+                <div class="social-item">
+                    <img src="images/instagram.png" alt="Ícone do Instagram">
+                    <p><a href="https://www.instagram.com/gabrielviniciussc/" target="_blank" style="color: #E4405F; text-decoration: none;">Instagram</a></p>
+                </div>
+                <div class="social-item">
+                    <img src="images/github.jpg" alt="Ícone do GitHub">
+                    <p><a href="https://github.com/gabrielviniciussc" target="_blank" style="color: #333; text-decoration: none;">GitHub</a></p>
+                </div>
+                <div class="social-item">
+                    <img src="images/linkedin.png" alt="Ícone do LinkedIn">
+                    <p><a href="https://www.linkedin.com/in/gabriel-vinicius-bb726a32b/" target="_blank" style="color: #0077B5; text-decoration: none;">LinkedIn</a></p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="info">
+                Clique nos nomes das redes sociais para acessá-las diretamente.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
